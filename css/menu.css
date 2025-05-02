@@ -70,3 +70,10 @@
 .toggler:checked:hover + .hamburger div {
     transform: rotate(225deg);
 }
+
+/* rotate => toggler and humburger in CSS  Cross*/
+.toggler:checked + .hamburger > div::after, .toggler:checked + .hamburger > div::before   {
+    transform: rotate(90deg);
+    top:0
+}
+
