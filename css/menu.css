@@ -107,10 +107,10 @@
 
 /* menu -> div -> div */
 .menu div div {
-    background-color: red;
-    max-width: 90vw;
+    max-width: 90vw; 
     max-height: 100vh;
-    /* opacity: 0; */
+    opacity: 0;
+    transition: .6s;
 }
 
 .menu div div ul li {
@@ -122,10 +122,11 @@
     color : #fff;
     font-weight: 550;
     text-transform: uppercase;
-    max-width: .5rem;
+    margin: .5rem;
     font-size: 1.2rem;
     display: inline-block;
-    transition: .3s;
+    transition: .3s; 
+ 
 }
 
 .menu div div ul li a:hover {
@@ -137,7 +138,10 @@
     visibility: visible;
 }
 
-
-.toggler:checked ~ .menu div {
+.toggler:checked ~ .menu > div {
     transform: translateX(-50%) translateY(-50%);
+}
+
+.toggler:checked ~ .menu > div > div {
+    opacity: 1;
 }
