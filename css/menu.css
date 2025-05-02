@@ -81,11 +81,11 @@
 .menu {
     width: 100%;
     height: 100%;
-    /* background-color: aquamarine; */
     position: fixed;
     top:0;
     left : 0;
-    /* visibility: hidden; */
+    visibility: hidden;
+    transition: .6s;
 }
 
 .menu > div {
@@ -129,4 +129,9 @@
 
 .menu div div ul li a:hover {
     color : #fff44f
+}
+
+/* toggler Checked => */
+.toggler:checked ~ .menu {
+    visibility: visible;
 }
