@@ -7,6 +7,7 @@
 
 /* toggler => input : type = "checkbox"*/
 .toggler {
+    background-color: aquamarine;
     position: absolute;
     top : 0.5rem;
     left : 0.5rem;
@@ -14,16 +15,17 @@
     height: 60px;
     z-index: 3;
     cursor: pointer;
-    opacity: 0;
+    opacity: 1;
 }
 
 /* hamburger */
 .hamburger {
+    opacity: 1;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #111;
-    z-index: 2;
+    background-color: #111111;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,4 +57,9 @@
 }
 .hamburger > div::before {
     top : 10px
+}
+
+/* toggler : checkout => hamburger  */
+.toggler:checked + .hamburger div {
+    transform: rotate(135deg);
 }
