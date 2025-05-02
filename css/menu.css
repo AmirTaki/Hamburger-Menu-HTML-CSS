@@ -16,3 +16,26 @@
     cursor: pointer;
     opacity: 0;
 }
+
+.hamburger {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #111;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top : .5rem;
+    left : .5rem
+}
+
+.hamburger > div {
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    border-radius:  1.5px;
+    background-color: #fff44f;
+}
+
