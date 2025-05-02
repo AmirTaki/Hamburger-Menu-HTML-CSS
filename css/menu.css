@@ -15,7 +15,7 @@
     height: 60px;
     z-index: 3;
     cursor: pointer;
-    opacity: 1;
+    opacity: 0;
 }
 
 /* hamburger */
@@ -25,7 +25,7 @@
     height: 60px;
     border-radius: 50%;
     background-color: #111111;
-    z-index: 3;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +40,7 @@
     height: 3px;
     border-radius:  1.5px;
     background-color: #fff44f;
+    transition: 0.4s;
 }
 
 .hamburger div:after , .hamburger div::before{
@@ -51,6 +52,7 @@
     height: 3px;
     border-radius: 1.5px;
     background-color: #fff44f;
+    transform: .4s;
 }
 .hamburger > div::after {
     top : -10px
@@ -62,4 +64,9 @@
 /* toggler : checkout => hamburger  */
 .toggler:checked + .hamburger div {
     transform: rotate(135deg);
+}
+
+/* hover in toggler  and hamburger*/
+.toggler:checked:hover + .hamburger div {
+    transform: rotate(225deg);
 }
