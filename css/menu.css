@@ -93,7 +93,7 @@
     height: 1600px;
     background-color: rgba(0, 0, 0, .6);
     border-radius: 50%;
-    transform: translateX(-10%) translateY(-50%);
+    transform: translateX(-150%) translateY(-50%);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -101,6 +101,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: .6s;
 
 }
 
@@ -134,4 +135,9 @@
 /* toggler Checked => */
 .toggler:checked ~ .menu {
     visibility: visible;
+}
+
+
+.toggler:checked ~ .menu div {
+    transform: translateX(-50%) translateY(-50%);
 }
